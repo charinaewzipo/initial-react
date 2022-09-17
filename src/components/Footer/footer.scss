@@ -1,0 +1,46 @@
+@import "../../global.scss";
+.footer {
+  background-color: $light;
+  height: 300px;
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    p {
+      color: $textlight;
+      margin: 10px 0;
+    }
+    .first {
+      width: 15%;
+      // background: #000;
+      .logo {
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        h4 {
+          font-size: 22px;
+        }
+      }
+
+      ul {
+        display: flex;
+        list-style: none;
+        li {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+    border-top: 1px solid $textlight;
+    p {
+      color: $textlight;
+      font-weight: 500;
+    }
+  }
+}

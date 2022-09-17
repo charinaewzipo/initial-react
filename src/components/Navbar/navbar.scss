@@ -1,0 +1,62 @@
+@import "../../global.scss";
+.navbar {
+  height: 70px;
+  background-color: $light;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h3 {
+      font-size: 24px;
+    }
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    li {
+      color: $textlight;
+      margin-right: 30px;
+      font-size: 22px;
+      cursor: pointer;
+      &.active {
+        font-weight: bold;
+        border-bottom: 3px solid $primary;
+      }
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .search {
+      margin-right: 30px;
+      font-size: 30px;
+    }
+    .badge {
+      margin-right: 30px;
+      font-size: 30px;
+    }
+    .button {
+      display: flex;
+      background-color: $primary;
+      padding: 10px;
+      cursor: pointer;
+      width: 100px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+      p {
+        margin-left: 10px;
+        font-weight: bold;
+      }
+    }
+  }
+}

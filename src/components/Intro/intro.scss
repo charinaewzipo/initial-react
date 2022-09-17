@@ -1,0 +1,62 @@
+@import "../../global.scss";
+.intro {
+  background-color: $light;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  width: 100vw;
+  height: calc(80vh);
+  .pic1 {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+  }
+  .left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      width: 400px;
+      height: 200px;
+      .text {
+        margin-bottom: 20px;
+        position: relative;
+        :first-child {
+          font-size: 40px;
+        }
+        :nth-child(2) {
+          font-size: 40px;
+          position: absolute;
+          bottom: 0;
+          right: 60px;
+          color: $primary;
+        }
+      }
+
+      .button {
+        margin-top: 20px;
+        background-color: $primary;
+        padding: 10px;
+        cursor: pointer;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        p {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .right {
+    flex: 1;
+  }
+}

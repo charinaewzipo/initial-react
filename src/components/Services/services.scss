@@ -1,0 +1,64 @@
+@import "../../global.scss";
+.services {
+  background: color #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: calc(80vh);
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    text-align: center;
+    // background-color: black;
+    h4 {
+      color: $primary;
+      margin-bottom: 10px;
+    }
+    h2 {
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 20px;
+      color: $textlight;
+      font-weight: 500;
+    }
+  }
+  .imgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height: 60%;
+    .item {
+      display: flex;
+      width: 15%;
+      height: 100%;
+      // background: #000;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      img {
+        position: absolute;
+        top: 0;
+      }
+      .text {
+        position: absolute;
+        top: 60%;
+        h3 {
+          margin: 10px 0;
+        }
+        p {
+          color: $textlight;
+        }
+      }
+    }
+  }
+}
