@@ -4,7 +4,7 @@ import Attach from "../img/attach.png";
 import { ChatContext } from "../context/ChatContext";
 import { AuthContext } from "../context/AuthContext";
 import { useState } from "react";
-import { async } from "@firebase/util";
+
 import {
   arrayUnion,
   doc,
