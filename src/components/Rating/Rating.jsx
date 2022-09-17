@@ -2,10 +2,7 @@ import React from "react";
 import "./rating.scss";
 import Rating from "@mui/material/Rating";
 import Stack from "@mui/material/Stack";
-import pic1 from "../../img/food1.png";
-import pic2 from "../../img/food2.png";
-import pic3 from "../../img/food3.png";
-import pic4 from "../../img/food4.png";
+
 const RatingEl = () => {
   return (
     <div className="ratingContainer">

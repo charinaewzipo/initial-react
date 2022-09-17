@@ -1,10 +1,9 @@
 import React from "react";
 import "./navbar.scss";
 import logo from "../../img/logo.png";
-import IconButton from "@mui/material/IconButton";
-import MailIcon from "@mui/icons-material/Mail";
+
 import Badge from "@mui/material/Badge";
-import { Mail, Search, ShoppingCart } from "@mui/icons-material";
+import { Search, ShoppingCart } from "@mui/icons-material";
 import LogoutIcon from "@mui/icons-material/Logout";
 const Navbar = () => {
   return (
