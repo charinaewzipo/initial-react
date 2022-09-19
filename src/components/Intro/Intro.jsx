@@ -1,20 +1,32 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./intro.scss";
-import { styled } from "@mui/material/styles";
 import { Facebook, GitHub, Instagram } from "@mui/icons-material";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Switch from "@mui/material/Switch";
 import phone from "../../img/iPhone 13.png";
+import { init } from "ityped";
 const Intro = () => {
+  const textRef = useRef();
+  console.log(textRef.current);
+  useEffect(() => {
+    init(textRef.current, {
+      showCursor: false,
+      backDelay: 1200,
+      strings: ["HTML/CSS", "React.js", "Yeah!"],
+    });
+  }, []);
+
   return (
     <div className="introContainer" id="home">
       <div className="leftContainer">
         <div className="title">
-          <h4>Hello ,i'm</h4>
+          <h4>Hello I'm </h4>
         </div>
         <div className="content">
           <h2>Mr. Charin Eawzipo</h2>
-          <h3>FRONT-END DEVELOPER | </h3>
+          <div className="ityped">
+            <h3>FRONT-END DEVELOPER |</h3>
+
+            <span ref={textRef}></span>
+          </div>
           <ul>
             <li>
               <a href="https://web.facebook.com/charin.aewzipo/">

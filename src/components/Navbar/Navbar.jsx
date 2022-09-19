@@ -73,11 +73,11 @@ const Navbar = ({ openmenu, setOpenmenu }) => {
           </div>
         </div>
         <div className="right">
-          <FormControlLabel
+          {/* <FormControlLabel
             control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
             className="darkttheme"
             onClick={() => setDarkMode(!darkmode)}
-          />
+          /> */}
           <div className="iconContainer" onClick={() => setOpenmenu(!openmenu)}>
             {openmenu ? (
               <Close className="icon" />

@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 import "./app.scss";
 import Contact from "./components/Contact/Contact";
 import Slider from "./components/Slider/Slider";
-import Project from "./components/Project/Project";
+
 import Projectlist from "./components/Projectlist/Projectlist";
 function App() {
   const [openmenu, setOpenmenu] = useState(false);

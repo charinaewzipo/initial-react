@@ -1,15 +1,12 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import "./contact.scss";
-import { Controller } from "react-hook-form";
-import TextField from "@mui/material/TextField";
-import { Box } from "@mui/material";
 
 const Contact = () => {
   const {
     register,
     handleSubmit,
-    watch,
+
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
