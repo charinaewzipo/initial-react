@@ -1,0 +1,17 @@
+@import "../../global.scss";
+.projectlistContainer {
+  display: flex;
+  flex-direction: column;
+  height: calc(400vh);
+  position: relative;
+  h1 {
+    color: white;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    right: 90px;
+    width: max-content;
+    letter-spacing: 2px;
+    border-bottom: 5px solid $border;
+  }
+}

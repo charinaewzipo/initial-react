@@ -1,0 +1,105 @@
+@import "../../global.scss";
+.projectContainer {
+  background-color: $bg1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  height: calc(100vh);
+  .bordercolor {
+    border: 1px solid lightgray;
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    &.mod2 {
+      flex-direction: row-reverse;
+    }
+    .circle2 {
+      transform: rotate(180deg);
+      position: absolute;
+      right: 10%;
+      top: -5%;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: linear-gradient($linear);
+    }
+    .circle1 {
+      position: absolute;
+      left: 10%;
+      bottom: 5%;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient($linear);
+    }
+    .left {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 80%;
+      // background: #000;
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        img {
+          max-width: 80%;
+          height: 80%;
+          object-fit: cover;
+          border: 10px solid $border;
+        }
+      }
+    }
+    .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      // background: #000;
+      .content {
+        width: 400px;
+
+        .header {
+          width: 20%;
+          display: flex;
+          width: 100%;
+          justify-content: space-around;
+          align-items: center;
+          margin-bottom: 50px;
+          .button {
+            padding: 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            background: linear-gradient($linear);
+            a {
+              color: white;
+              text-decoration: none;
+            }
+          }
+        }
+        span {
+          color: lightgray;
+          font-size: 12px;
+        }
+        p {
+          letter-spacing: 0.8px;
+        }
+      }
+    }
+  }
+}

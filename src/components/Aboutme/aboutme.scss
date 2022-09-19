@@ -1,0 +1,59 @@
+@import "../../global.scss";
+.aboutmeContainer {
+  background-color: $bg2;
+  display: flex;
+  color: white;
+  height: calc(100vh - 70px);
+  .leftContainer {
+    flex: 1;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    .circle2 {
+      position: absolute;
+      right: 10%;
+      bottom: 10%;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: linear-gradient($linear);
+    }
+    img {
+      border-radius: 50%;
+      width: 400px;
+      height: 400px;
+      border: 2px solid #ff987b;
+      object-fit: cover;
+    }
+  }
+  .rigtContainer {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      h2 {
+        font-size: 40px;
+        letter-spacing: 2px;
+        border-bottom: 5px solid $border;
+      }
+      h4 {
+        margin: 10px 0;
+      }
+    }
+  }
+  .circle {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient($linear);
+  }
+}
