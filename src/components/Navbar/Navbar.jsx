@@ -23,7 +23,7 @@ const Navbar = ({ openmenu, setOpenmenu }) => {
           </div>
           <div className="itemContainer">
             <Phone className="icon" />
-            <span>095-0924619</span>
+            <span>+66 950924619</span>
           </div>
         </div>
         <div className="right">
