@@ -3,7 +3,7 @@ import pic2 from "./img/dropdownfood.png";
 import pic3 from "./img/flag.png";
 import pic4 from "./img/slider.png";
 import pic5 from "./img/shoppingcart.png";
-import pic6 from "./img/todolist.png";
+
 const miniProject = [
   {
     id: 1,

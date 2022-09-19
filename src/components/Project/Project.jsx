@@ -1,6 +1,6 @@
 import React from "react";
 import "./project.scss";
-import pic1 from "../../img/youtube.png";
+
 const Project = ({ title, img, linkurl, id, desc, hint }) => {
   return (
     <div className="projectContainer" id="project">

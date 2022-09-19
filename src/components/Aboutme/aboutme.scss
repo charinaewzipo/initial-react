@@ -30,26 +30,44 @@
   .rigtContainer {
     position: relative;
     flex: 1;
+    z-index: 1;
     display: flex;
     justify-content: center;
     .content {
+      z-index: 1;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: 50%;
+      width: 60%;
+
       h2 {
         font-size: 40px;
         letter-spacing: 2px;
         border-bottom: 5px solid $border;
+        width: max-content;
+        margin-bottom: 10px;
       }
       h4 {
-        margin: 10px 0;
+        margin: 5px 0;
+      }
+      .code {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 80px;
+          margin: 20px 20px;
+          object-fit: cover;
+        }
       }
     }
   }
   .circle {
     position: absolute;
-    top: 15%;
+    z-index: 0;
+    top: 0%;
     left: 10%;
     width: 100px;
     height: 100px;

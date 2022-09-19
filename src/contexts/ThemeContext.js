@@ -11,7 +11,7 @@ const themes = {
 };
 export const ThemeContext = createContext(themes.blue);
 export function ThemeProvider({ children }) {
-  const [theme, setTheme] = useState("blue");
+  // const [theme, setTheme] = useState("blue");
   const [darkmode, setDarkMode] = useState(true);
   const themeProviderData = {
     darkmode,
