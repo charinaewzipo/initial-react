@@ -2,7 +2,7 @@
 .contactContainer {
   background-color: $bg1;
   display: flex;
-  color: white;
+  color: $text1;
   height: calc(100vh - 70px);
   .Container {
     display: flex;
@@ -10,7 +10,7 @@
     position: relative;
     .left {
       flex: 1;
-      color: white;
+      color: $text1;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -39,13 +39,13 @@
         border-radius: 20px;
         padding: 20px;
         margin: 10px 10px;
-        border: 2px solid #ff987b;
+        border: 2px solid teal;
       }
       textarea {
         border-radius: 20px;
         padding: 10px;
         margin: 10px 10px;
-        border: 2px solid #ff987b;
+        border: 2px solid teal;
       }
       p {
         color: red;
@@ -56,8 +56,8 @@
         padding: 10px;
         border-radius: 20px;
         border: none;
-        color: white;
-
+        color: $text1;
+        cursor: pointer;
         width: 100%;
       }
     }

@@ -12,7 +12,6 @@ const Aboutme = () => {
     <div className="aboutmeContainer" id="aboutme">
       <div className="leftContainer">
         <img src={photo} alt="" />
-        <div className="circle2"></div>
       </div>
       <div className="rigtContainer">
         <div className="content">

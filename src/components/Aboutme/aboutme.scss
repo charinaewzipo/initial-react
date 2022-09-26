@@ -2,10 +2,10 @@
 .aboutmeContainer {
   background-color: $bg2;
   display: flex;
-  color: white;
+  color: #333;
   height: calc(100vh - 70px);
   .leftContainer {
-    flex: 1;
+    flex: 2;
     display: flex;
     position: relative;
     align-items: center;
@@ -17,19 +17,19 @@
       width: 30px;
       height: 30px;
       border-radius: 50%;
-      background: linear-gradient($linear);
+      background: linear-gradient($linear2);
     }
     img {
       border-radius: 50%;
       width: 400px;
       height: 400px;
-      border: 2px solid #ff987b;
+      border: 2px solid $border;
       object-fit: cover;
     }
   }
   .rigtContainer {
     position: relative;
-    flex: 1;
+    flex: 3;
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -43,13 +43,24 @@
       h2 {
         font-size: 40px;
         letter-spacing: 2px;
-        border-bottom: 5px solid $border;
+        border-bottom: 5px solid $bg1;
         width: max-content;
         margin-bottom: 10px;
+        color: $bg1;
       }
       h4 {
         margin: 5px 0;
         font-weight: normal;
+        line-height: 30px;
+        font-size: 16px;
+        color: white;
+      }
+      ul {
+        li {
+          font-size: 16px;
+          line-height: 30px;
+          color: white;
+        }
       }
       .code {
         display: flex;
@@ -58,8 +69,9 @@
         justify-content: center;
 
         img {
-          width: 80px;
-          margin: 20px 20px;
+          width: 60px;
+          height: 60px;
+          margin: 20px 40px;
           object-fit: cover;
         }
       }
@@ -69,10 +81,10 @@
     position: absolute;
     z-index: 0;
     top: 0%;
-    left: 10%;
+    left: 0%;
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: linear-gradient($linear);
+    background: linear-gradient($linear2);
   }
 }

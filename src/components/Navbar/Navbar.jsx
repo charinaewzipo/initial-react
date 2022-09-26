@@ -12,7 +12,7 @@ const Navbar = ({ openmenu, setOpenmenu }) => {
     <div className="navbarContainer">
       <div className="container">
         <div className="left">
-          <a href="#portfolio">Portfolio</a>
+          <a href="#home">Portfolio</a>
           <div className="itemContainer">
             <Person className="icon" />
             <span>Charin eawizpo (Rin)</span>

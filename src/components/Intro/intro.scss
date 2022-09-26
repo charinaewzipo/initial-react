@@ -15,7 +15,7 @@
     // letter-spacing: 2px;
   }
   h2 {
-    color: white;
+    color: $text1;
     letter-spacing: 2px;
   }
   .leftContainer {
@@ -24,7 +24,7 @@
     flex: 1;
     align-items: center;
     .title {
-      background: linear-gradient($linear);
+      background-color: $bg2;
       border-radius: 20px 20px 20px 0;
       padding: 20px;
       margin-left: 500px;
@@ -33,7 +33,16 @@
       padding: 20px;
       border-radius: 20px;
       cursor: pointer;
-      background: linear-gradient($linear);
+      background: $bg2;
+      transition: all 0.5 ease-in-out;
+      &:hover {
+        background: (white);
+        a {
+          h4 {
+            color: black;
+          }
+        }
+      }
       a {
         text-decoration: none;
         h4 {
@@ -48,14 +57,14 @@
         h3 {
           margin: 0 5px;
           font-size: 22px;
-          color: white;
+          color: $text1;
           font-weight: normal;
         }
         span {
           font-weight: normal;
           margin: 0 5px;
           font-size: 22px;
-          color: white;
+          color: $text1;
         }
       }
       h2 {
@@ -63,7 +72,7 @@
         margin: 20px 0;
       }
       h3 {
-        color: white;
+        color: $text1;
       }
       ul {
         display: flex;

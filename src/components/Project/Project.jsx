@@ -5,12 +5,12 @@ const Project = ({ title, img, linkurl, id, desc, hint }) => {
   return (
     <div className="projectContainer" id="project">
       <div className={id % 2 === 0 ? "container mod2" : "container"}>
-        <div className="circle2"></div>
-        <div className="circle1"></div>
         <div className="left">
-          <a href={linkurl}>
-            <img src={img} alt="" />
-          </a>
+          <div className="leftContainer">
+            <div className="img">
+              <img src={img} alt="" />
+            </div>
+          </div>
         </div>
         <div className="right">
           <div className="content">
