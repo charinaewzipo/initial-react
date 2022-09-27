@@ -30,8 +30,8 @@
               width: 100%;
               height: 100%;
               position: absolute;
-              top: -40px;
-              left: 40px;
+              top: -30px;
+              left: 30px;
               background: linear-gradient($linear2);
               z-index: -1;
             }
@@ -39,25 +39,7 @@
         }
       }
     }
-    .circle2 {
-      transform: rotate(180deg);
-      position: absolute;
-      right: 10%;
-      top: -5%;
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      background: linear-gradient($linear2);
-    }
-    .circle1 {
-      position: absolute;
-      left: 10%;
-      bottom: 5%;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: linear-gradient($linear);
-    }
+
     .left {
       flex: 3;
       display: flex;
@@ -75,8 +57,8 @@
             width: 100%;
             height: 100%;
             position: absolute;
-            top: 40px;
-            right: -40px;
+            top: 30px;
+            right: -30px;
             background: linear-gradient($linear);
             z-index: -1;
           }
@@ -113,6 +95,7 @@
             cursor: pointer;
             background: white;
             transition: all 0.5s ease;
+            border: 1px solid teal;
             color: $text1;
             &:hover {
               background: $bg2;
