@@ -1,0 +1,246 @@
+$black: #0e0e0e;
+$white: #fcfcfc;
+$orange: #ff8901;
+$gray: #585858;
+.navbar {
+  border-bottom: 1px solid #585858;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10vh;
+  margin: 0px;
+  padding: 0px;
+  background-color: $black;
+  .menu {
+    padding: 5px 10px;
+    width: fit-content;
+    cursor: pointer;
+    border: 1px solid transparent;
+    &.open {
+      background-color: rgba($color: $orange, $alpha: 0.15);
+      border: 1px solid $orange;
+      h5 {
+        color: $orange;
+      }
+    }
+  }
+  h5 {
+    color: $gray;
+    font-weight: bold;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    .icon {
+      margin-top: 15px;
+      width: 15px;
+      height: 15px;
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: #fcfcfc;
+      border: 1px solid $orange;
+    }
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      h5:last-child {
+        color: $orange;
+      }
+    }
+  }
+}
+.container {
+  display: flex !important;
+  width: 100vw;
+  justify-content: center;
+  color: $white;
+  font-weight: normal;
+  .info {
+    padding-top: 20px;
+    height: calc(100% - 20px);
+    width: 85%;
+    h1 {
+      color: $orange;
+      font-weight: normal;
+    }
+    h3 {
+      margin-top: 5px;
+      color: $white;
+      font-weight: normal;
+    }
+    p {
+      color: $gray;
+    }
+    .icon-skill {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border: 1px solid gray;
+      color: #fcfcfc;
+      width: 40px;
+      height: 40px;
+
+      background: linear-gradient(to right, $orange 4px, transparent 4px) 0 0,
+        linear-gradient(to right, $orange 4px, transparent 4px) 0 100%,
+        linear-gradient(to left, $orange 4px, transparent 4px) 100% 0,
+        linear-gradient(to left, $orange 4px, transparent 4px) 100% 100%,
+        linear-gradient(to bottom, $orange 4px, transparent 4px) 0 0,
+        linear-gradient(to bottom, $orange 4px, transparent 4px) 100% 0,
+        linear-gradient(to top, $orange 4px, transparent 4px) 0 100%,
+        linear-gradient(to top, $orange 4px, transparent 4px) 100% 100%;
+
+      background-repeat: no-repeat;
+      background-size: 2px 2px;
+    }
+    .card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60%;
+      height: 40%;
+      overflow: hidden;
+      // height: 200px;
+      // margin: auto;
+      .image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+    .category-container {
+      height: 20%;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      gap: 5px;
+      // background: red;
+      color: $white;
+      font-weight: normal;
+      .category-item {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        h4 {
+          width: 80px;
+          padding-right: 10px;
+          font-weight: normal;
+        }
+        .scale {
+          border-radius: 1px;
+          width: 60px;
+          height: 10px;
+          background: $gray;
+          &.fill {
+            background: $orange;
+          }
+        }
+      }
+    }
+  }
+  .tab-menu {
+    padding-top: 20px;
+    height: calc(100% - 20px);
+    width: 15%;
+    // background: red;
+    .container {
+      // height: 300px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      // background: wheat;
+      // justify-content: center;
+      .list-detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $gray;
+        height: 65%;
+        width: 85%;
+        // background: #000;
+        .detail-item {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid $gray;
+          height: 25%;
+          width: 100%;
+        }
+      }
+      .list-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 30%;
+        width: 85%;
+        // background: blue;
+        .item {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid $gray;
+          width: 100%;
+          height: 25%;
+          &:first-child {
+            background-color: rgba($color: $orange, $alpha: 0.15);
+            border: 1px solid $orange;
+          }
+          &:last-child {
+            background-color: $orange;
+          }
+          .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            height: 90%;
+            &:first-child {
+              border-right: 1px solid $gray;
+            }
+            &.select {
+              color: $orange;
+              border: 1px solid $orange;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.footer {
+  border-top: 1px solid #585858;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 15vh;
+  margin: 0px;
+  padding: 0px;
+  background-color: $black;
+  color: $white;
+  .item {
+    padding: 5px 2px;
+    // background: blue;
+    width: 100%;
+    height: 70px;
+    position: relative;
+    p {
+      font-size: 12px;
+    }
+  }
+}
