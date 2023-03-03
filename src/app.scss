@@ -1,0 +1,105 @@
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  color: white;
+
+  .score-container {
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    width: 15%;
+    height: 60%;
+    padding: 15px;
+    .wrapper {
+      padding: 15px;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      --borderWidth: 3px;
+      position: relative;
+      --border-size: 3px;
+      --border-angle: 0turn;
+      background: #000;
+      background-image: conic-gradient(
+          from var(--border-angle),
+          rgb(15, 15, 15),
+          rgb(34, 25, 17) 50%,
+          rgb(15, 15, 15)
+        ),
+        conic-gradient(from var(--border-angle), transparent 20%, orange, #0000);
+      background-size: calc(100% - (var(--border-size) * 2)) calc(100% - (var(--border-size) * 2)),
+        cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+
+      animation: bg-spin 6s linear infinite;
+      @keyframes bg-spin {
+        to {
+          --border-angle: 1turn;
+        }
+      }
+
+      .cards {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        .card {
+          height: 25%;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          position: relative;
+          justify-content: center;
+          .square {
+            width: 100%;
+            position: absolute;
+            height: 70%;
+            box-shadow: rgba(0, 0, 0, 1) 0px 5px 15px 0px;
+          }
+          .icon {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            width: 60%;
+            height: 100%;
+            color: #000;
+            background: white;
+            transform: perspective(800px) rotateY(25deg) scale(0.8) rotateX(10deg);
+            transition: 0.6s ease all;
+            img {
+              width: 50%;
+            }
+          }
+          .score {
+            width: 40%;
+            margin-left: 0px;
+            height: 50%;
+            color: orange;
+            font-size: 30px;
+            transform: rotateX(10deg) rotateZ(0);
+            transform-style: preserve-3d;
+            border-radius: 50px;
+            box-shadow: 1px 1px 0px 0px orange, -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+              28px 28px 28px 0 rgba(34, 33, 81, 0.25);
+            transition: 0.4s ease-in-out transform, 0.4s ease-in-out box-shadow;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
