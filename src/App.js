@@ -5,7 +5,6 @@ import Menu from "./components/Menu/Menu";
 import Navbar from "./components/Navbar/Navbar";
 import "./app.scss";
 import 'animate.css';
-import Contact from "./components/Contact/Contact";
 import Slider from "./components/Slider/Slider";
 import Projectlist from "./components/Projectlist/Projectlist";
 import PreLoader from "./components/PreLoader";

@@ -1,11 +1,11 @@
 import React from "react";
 import "./aboutme.scss";
 import photo from "../../img/pic1.PNG";
-import pic1 from "../../img/react.png";
-import pic2 from "../../img/htmlcss.png";
-import pic3 from "../../img/mysql.png";
-import pic4 from "../../img/mongodb.png";
-import pic5 from "../../img/docker.png";
+// import pic1 from "../../img/react.png";
+// import pic2 from "../../img/htmlcss.png";
+// import pic3 from "../../img/mysql.png";
+// import pic4 from "../../img/mongodb.png";
+// import pic5 from "../../img/docker.png";
 import { Fade, Slide } from "react-awesome-reveal";
 const Aboutme = () => {
   return (

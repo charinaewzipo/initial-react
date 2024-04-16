@@ -3,7 +3,7 @@ import "./intro.scss";
 import { Facebook, GitHub, Instagram } from "@mui/icons-material";
 import phone from "../../img/iPhone 13.png";
 import { init } from "ityped";
-import { Bounce, Fade, Flip, Hinge, JackInTheBox } from "react-awesome-reveal";
+import { Fade, JackInTheBox } from "react-awesome-reveal";
 const Intro = () => {
   const textRef = useRef();
   console.log(textRef.current);

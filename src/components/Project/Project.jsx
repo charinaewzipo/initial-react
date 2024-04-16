@@ -1,6 +1,6 @@
 import React from "react";
 import "./project.scss";
-import { Bounce, Fade, Flip, Hinge, JackInTheBox, Roll, Rotate, Slide } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 const Project = ({ title, img, linkurl, id, desc, hint }) => {
   return (
     <div className="projectContainer" id="project">

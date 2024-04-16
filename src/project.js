@@ -1,7 +1,7 @@
 import pic1 from "./img/ecommerce.png";
 import pic2 from "./img/youtube.png";
 import pic3 from "./img/chatapp.png";
-import pic4 from "./img/figmafood.png";
+// import pic4 from "./img/figmafood.png";
 import pic0 from "./img/gethergopic.png"
 const project = [
   {
