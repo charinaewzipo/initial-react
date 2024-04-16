@@ -6,7 +6,7 @@ import photo from "../../img/pic1.PNG";
 // import pic3 from "../../img/mysql.png";
 // import pic4 from "../../img/mongodb.png";
 // import pic5 from "../../img/docker.png";
-import { Fade, Slide } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 const Aboutme = () => {
   return (
     <div className="aboutmeContainer" id="aboutme">
