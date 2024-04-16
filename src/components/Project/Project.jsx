@@ -1,6 +1,6 @@
 import React from "react";
 import "./project.scss";
-
+import { Bounce, Fade, Flip, Hinge, JackInTheBox, Roll, Rotate, Slide } from "react-awesome-reveal";
 const Project = ({ title, img, linkurl, id, desc, hint }) => {
   return (
     <div className="projectContainer" id="project">
@@ -8,23 +8,29 @@ const Project = ({ title, img, linkurl, id, desc, hint }) => {
         <div className="left">
           <div className="leftContainer">
             <div className="img">
-              <img src={img} alt="" />
+              <Slide direction={id % 2 === 0 ? "right" : "left"}>
+                <a href={linkurl}>
+                  <img src={img} alt="" />
+                </a>
+              </Slide>
             </div>
           </div>
         </div>
         <div className="right">
-          <div className="content">
-            <div className="header">
-              <h2>{title}</h2>
-              <div className="button">
-                <a href={linkurl}>
-                  <h4>view</h4>
-                </a>
+          <Fade delay={200}>
+            <div className="content">
+              <div className="header">
+                <h2>{title}</h2>
+                <div className="button">
+                  <a href={linkurl}>
+                    <h4>View</h4>
+                  </a>
+                </div>
               </div>
+              <p>{desc}</p>
+              {hint ? <span>รหัสทดสอบ {hint}</span> : null}
             </div>
-            <p>{desc}</p>
-            <span>รหัสทดสอบ {hint}</span>
-          </div>
+          </Fade>
         </div>
       </div>
       <div className="bordercolor"></div>

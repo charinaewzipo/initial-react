@@ -21,15 +21,15 @@
     }
     img {
       border-radius: 50%;
-      width: 400px;
-      height: 400px;
+      width: 300px;
+      height: 300px;
       border: 2px solid $border;
       object-fit: cover;
     }
   }
   .rigtContainer {
     position: relative;
-    flex: 3;
+    flex: 6;
     z-index: 1;
     display: flex;
     justify-content: center;

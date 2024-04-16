@@ -53,6 +53,7 @@
     .content {
       .ityped {
         display: flex;
+        flex-shrink: 0;
         width: 100%;
         h3 {
           margin: 0 5px;
